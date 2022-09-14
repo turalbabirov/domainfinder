@@ -1,0 +1,9 @@
+.dflex {
+   display: flex;
+}
+.justifyCCenter {
+   justify-content: center;
+}
+.alignICenter {
+   align-items: center;
+}

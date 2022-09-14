@@ -1,0 +1,71 @@
+// Header:
+.detailSearchBar {
+  margin-top: -155px !important;
+
+  & * {
+    background-color: #63b390;
+    color: white !important;
+    border: 0 !important;
+    caret-color: white !important;
+  }
+
+  & *::placeholder {
+    color: lightgray !important;
+  }
+}
+
+// Sections:
+.detailPage {
+  margin-top: -40px;
+
+  & .tagsBox,
+  .domainRegister,
+  .whois {
+    padding: 30px;
+    background-color: white !important;
+    border: 1px solid lightgray;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+
+    & a {
+      text-decoration: underline;
+      color: gray !important;
+    }
+  }
+
+  & .whois {
+    & .react-tabs__tab--selected {
+      border: none;
+      border-bottom: 2px solid #63b390;
+      color: #63b390;
+      font-weight: bolder;
+    }
+
+    & .react-tabs__tab {
+      position: static;
+    }
+
+    & .tabpanelStyle > div {
+      & > div:first-child {
+        font-size: 13px;
+        color: gray !important;
+        margin: 10px 0;
+      }
+
+      & > div:last-child {
+        margin: 10px 0;
+      }
+    }
+  }
+}
+
+// Similar:
+.similar {
+  margin: 40px 0;
+}

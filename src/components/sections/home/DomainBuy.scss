@@ -1,0 +1,50 @@
+.domainsearching {
+   margin-top: 150px;
+
+   & > .domain {
+      // Heading:
+      & > div:first-child {
+         text-align: center;
+         margin: 0 0 50px;
+
+         & > h2 {
+            font-size: 37px;
+         }
+         & > p {
+            font-size: 18px;
+         }
+      }
+
+      // Searching:
+      & > div:nth-child(2) {
+         & > .result {
+            display: none;
+            border: 2px solid #52ab84;
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: -40px;
+
+            & > div {
+               background-color: transparent;
+            }
+
+            & > div:last-child {
+               color: #52ab84 !important;
+               text-decoration: underline;
+            }
+         }
+      }
+
+      // Top Searches:
+      & > div:last-child {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 30px 0 100px;
+
+         & > b {
+            margin-right: 40px;
+         }
+      }
+   }
+}

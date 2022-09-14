@@ -1,0 +1,45 @@
+.domainDescription {
+   margin: 150px 0 80px;
+
+   & > .description {
+      & > div:first-child {
+         & > h2 {
+            font-size: 40px;
+         }
+
+         & > span {
+            font-size: 19px;
+         }
+      }
+
+      // 1-2-3
+      & > div:last-child {
+         display: flex;
+
+         & > div {
+            display: flex;
+            align-items: center;
+            font-size: 21px;
+            margin: 80px 0 0;
+
+            & > span:first-child {
+               display: inline-flex;
+               justify-content: center;
+               border-radius: 50%;
+               background-color: #52ab84;
+               color: white;
+               width: 35px;
+               height: 35px;
+               margin-right: 10px;
+            }
+         }
+
+         & > div:not(:last-child)::after {
+            content: url("../../../assets/pictures/arrow-right.png");
+            margin-bottom: -12px;
+            margin-right: 20px;
+            margin-left: 20px;
+         }
+      }
+   }
+}

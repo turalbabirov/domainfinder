@@ -1,0 +1,10 @@
+.greenHead {
+   & > div:first-child {
+      background-color: #52ab84 !important;
+      padding-bottom: 80px;
+
+      & * {
+         color: white !important;
+      }
+   }
+}
