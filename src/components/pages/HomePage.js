@@ -1,16 +1,13 @@
 import React from 'react';
-import Header from '../sections/Header';
-import Content from '../sections/home/Content.js';
-import Footer from '../sections/Footer';
+import Content from '../sections/home/Content';
+import Layout from '../sections/Layout';
 
-function Home() {
-  return (
-    <>
-      <Header />
-      <Content />
-      <Footer />
-    </>
-  );
-}
+const HomePage = () => {
+   return (
+      <Layout>
+         <Content />
+      </Layout>
+   );
+};
 
-export default Home;
+export default HomePage;

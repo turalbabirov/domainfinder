@@ -7,18 +7,18 @@ import Detail from './components/pages/Detail';
 import NotFound from './components/pages/404';
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="search" element={<Search />} />
-          <Route path="detail" element={<Detail />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
-  );
+   return (
+      <BrowserRouter>
+         <div className="App">
+            <Routes>
+               <Route path="/" element={<HomePage />} />
+               <Route path="search" element={<Search />} />
+               <Route path="detail" element={<Detail />} />
+               <Route path="*" element={<NotFound />} />
+            </Routes>
+         </div>
+      </BrowserRouter>
+   );
 }
 
 export default App;

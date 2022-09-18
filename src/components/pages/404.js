@@ -1,26 +1,21 @@
 import React from 'react';
-import Footer from '../sections/Footer';
-import GreenHeader from '../modules/GreenHeader';
+import Layout from '../sections/Layout';
 import { Col, Row } from 'antd';
 
-function NotFound() {
-  return (
-    <div className="404NotFound">
-      <>
-        <GreenHeader />
-
-        <Row justify="center">
-          <Col span={19}>
-            <h2 style={{ textAlign: 'center', margin: '70px' }}>
-              404 Not Found
-            </h2>
-          </Col>
-        </Row>
-
-        <Footer />
-      </>
-    </div>
-  );
-}
+const NotFound = () => {
+   return (
+      <Layout>
+         <div className="404NotFound">
+            <Row justify="center">
+               <Col span={19}>
+                  <h2 style={{ textAlign: 'center', margin: '70px' }}>
+                     404 Not Found
+                  </h2>
+               </Col>
+            </Row>
+         </div>
+      </Layout>
+   );
+};
 
 export default NotFound;

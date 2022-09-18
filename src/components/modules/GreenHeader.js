@@ -1,7 +1,6 @@
-import React from "react";
-import Header from "../sections/Header";
-
-import "./GreenHeader.scss";
+import React from 'react';
+import Header from './Header';
+import './GreenHeader.scss';
 
 function GreenHeader() {
    return (

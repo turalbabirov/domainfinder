@@ -1,22 +1,19 @@
-import React, { useState } from "react";
-import { MultiSelect } from "react-multi-select-component";
-import { Col, Row, Divider } from "antd";
-import { Dropdown, Menu, Space } from "antd";
-import { DownOutlined } from "@ant-design/icons";
-import GreenHeader from "../modules/GreenHeader.js";
-import SearchingBox from "../modules/SearchingBox.js";
-
-import Footer from "../sections/Footer";
-
-import "./Search.scss";
-import Box from "../modules/Box.js";
+import React, { useState } from 'react';
+import { Col, Row, Divider } from 'antd';
+import { MultiSelect } from 'react-multi-select-component';
+import { Dropdown, Menu, Space } from 'antd';
+import { DownOutlined } from '@ant-design/icons';
+import SearchingBox from '../modules/SearchingBox';
+import Box from '../modules/Box';
+import Layout from '../sections/Layout';
+import './Search.scss';
 
 const options = [
-   { label: "Administrative", value: "administrative" },
-   { label: "Art & Design", value: "artDesign" },
-   { label: "Business", value: "business" },
-   { label: "Consulting", value: "consulting" },
-   { label: "Customer Services & Support", value: "customerServicesSupport" },
+   { label: 'Administrative', value: 'administrative' },
+   { label: 'Art & Design', value: 'artDesign' },
+   { label: 'Business', value: 'business' },
+   { label: 'Consulting', value: 'consulting' },
+   { label: 'Customer Services & Support', value: 'customerServicesSupport' },
 ];
 
 const menu = (
@@ -28,7 +25,7 @@ const menu = (
                   Only domain <input type="checkbox" />
                </span>
             ),
-            key: "0",
+            key: '0',
          },
          {
             label: (
@@ -36,20 +33,17 @@ const menu = (
                   Other options <input type="checkbox" />
                </span>
             ),
-            key: "1",
+            key: '1',
          },
       ]}
    />
 );
 
-function DomainFinder() {
+const DomainFinder = () => {
    const [selected, setSelected] = useState([]);
 
    return (
-      <>
-         {/* Header */}
-         <GreenHeader />
-
+      <Layout>
          <Row justify="center">
             <Col span={19}>
                <div className="shadowbox">
@@ -125,7 +119,7 @@ function DomainFinder() {
                                  <div>
                                     <Dropdown
                                        overlay={menu}
-                                       trigger={["click"]}
+                                       trigger={['click']}
                                     >
                                        <a
                                           href="htt"
@@ -134,7 +128,7 @@ function DomainFinder() {
                                           <Space>
                                              <b
                                                 style={{
-                                                   textDecoration: "underline",
+                                                   textDecoration: 'underline',
                                                 }}
                                              >
                                                 Relevance
@@ -162,11 +156,8 @@ function DomainFinder() {
                </div>
             </Col>
          </Row>
-
-         {/* Footer */}
-         <Footer />
-      </>
+      </Layout>
    );
-}
+};
 
 export default DomainFinder;
