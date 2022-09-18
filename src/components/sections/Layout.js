@@ -1,8 +1,8 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import Header from '../modules/Header';
-import GreenHeader from '../modules/GreenHeader';
-import Footer from '../modules/Footer';
+import Header from './Header';
+import GreenHeader from './modules/GreenHeader';
+import Footer from './Footer';
 
 const Layout = (props) => {
    let location = useLocation();

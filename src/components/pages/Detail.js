@@ -1,10 +1,10 @@
 import React from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { Col, Row } from 'antd';
 import Layout from '../sections/Layout';
-import Box from '../modules/Box';
-import SearchingBox from '../modules/SearchingBox';
-import Tags from '../modules/Tags';
+import { Col, Row } from 'antd';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import Box from '../sections/modules/Box';
+import SearchingBox from '../sections/modules/SearchingBox';
+import Tags from '../sections/modules/Tags';
 import 'react-tabs/style/react-tabs.css';
 import './Detail.scss';
 

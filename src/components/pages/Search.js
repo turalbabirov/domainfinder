@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
+import Layout from '../sections/Layout';
 import { Col, Row, Divider } from 'antd';
 import { MultiSelect } from 'react-multi-select-component';
 import { Dropdown, Menu, Space } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
-import SearchingBox from '../modules/SearchingBox';
-import Box from '../modules/Box';
-import Layout from '../sections/Layout';
+import Box from '../sections/modules/Box';
+import SearchingBox from '../sections/modules/SearchingBox';
 import './Search.scss';
 
 const options = [

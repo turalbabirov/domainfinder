@@ -1,8 +1,8 @@
-import React from "react";
-import SearchingBox from "../../modules/SearchingBox";
-import { Col, Row } from "antd";
-import "./DomainBuy.scss";
-import Tags from "../../modules/Tags";
+import React from 'react';
+import SearchingBox from '../modules/SearchingBox';
+import { Col, Row } from 'antd';
+import './DomainBuy.scss';
+import Tags from '../modules/Tags';
 
 function Domain() {
    return (
@@ -32,7 +32,7 @@ function Domain() {
                            <h4>Adobe XD</h4>
                         </div>
                         <div>
-                           <a href={"https://google.com"}>
+                           <a href={'https://google.com'}>
                               Show 599 finded domains
                            </a>
                         </div>
